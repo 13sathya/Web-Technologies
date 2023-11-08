@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Palindrome</title>
+    <style>
+        .container {
+            width: 20%;
+            border: 2px solid black;
+            padding: 3%;
+            margin-left: 40%;
+            background-color: rgb(211, 236, 244);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Palindrome</h1>
+    <div class="container">
+        <p>Enter your text to check palindrome</p>
+        <textarea id="text" cols="20" rows="5"></textarea>
+        <br><br>
+        <button style="margin-left:35%;" id="check" onclick="check()"> Check</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function check() {
+            let str = document.getElementById("text").value;
+            let len = str.length;
+            let isPalin = true;
+            for (let i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    isPalin = false;
+                    break;
+                }
+            }
+            if (isPalin) {
+                document.getElementById("result").innerHTML = `${str} is a palindrome`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `${str} is not a palindrome`;
+            }
+        }
+    </script>
+</body>
+
+</html>
