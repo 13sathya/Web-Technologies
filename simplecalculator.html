@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Simple calculator</title>
+  
+</head>
+
+<body align="center">
+    <h3>Simple Calculator</h3>
+    <form action="">
+
+        <label for="Value1">Value 1 :</label>
+        <input type="text" name="v1" id="Value1"> <br><br>
+        <label for="Value2">Value 2 :</label>
+        <input type="text" name="v2" id="Value2"> <br><br>
+
+
+        <button type="button" onclick="add()">ADDITION</button>
+        <button type="button" onclick="sub()">SUBSTRACT</button>
+        <button type="button" onclick="mul()">MULTIPLY</button>
+        <button type="button" onclick="div()">DIVISION</button><br><br>
+        <div id="result">
+
+        </div>
+    </form>
+    <script>
+
+        function add() {
+            let v2 = parseInt(document.getElementById("Value2").value);
+            let v1 = parseInt(document.getElementById("Value1").value);
+            let res = v1 + v2;
+            document.getElementById("result").innerHTML = `Addition of ${v1} and ${v2} is ${res}`
+        }
+        function sub() {
+            let v1 = document.getElementById("Value1").value;
+            let v2 = document.getElementById("Value2").value;
+            let res = v1 - v2;
+            document.getElementById("result").innerHTML = `Substraction of ${v1} and ${v2} is ${res}`
+        }
+        function mul() {
+            let v1 = document.getElementById("Value1").value;
+            let v2 = document.getElementById("Value2").value;
+            let res = v1 * v2;
+            document.getElementById("result").innerHTML = `Multiplication of ${v1} and ${v2} is ${res}`
+        }
+        function div() {
+            let v1 = document.getElementById("Value1").value;
+            let v2 = document.getElementById("Value2").value;
+            let res = v1 / v2;
+            document.getElementById("result").innerHTML = `Division of ${v1} and ${v2} is ${res}`
+        }
+    </script>
+</body>
+
+</html>
