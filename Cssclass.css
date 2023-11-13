@@ -1,0 +1,6 @@
+    p{
+        color:rgb(51, 79, 51) ; background-attachment:fixed; border: red;
+ /* this is the representation of comments in css AND
+  bg will be always fixed in the class  there will be no borders available...*/
+  
+    }
