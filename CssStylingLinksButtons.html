@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>styling links and buttons</title>
+       <style>
+        body{
+            background-color: rgb(219, 189, 210);
+        }
+            .container{
+                border: 2px solid rgb(126, 72, 72);
+                margin: 10px 5px;
+                width: 500;
+                border-style: dashed;
+                padding: 35px;
+            } 
+            a{
+                text-decoration: none;
+                color: rgb(108, 60, 190);
+                /* this  text decoration helps in rmoving the underline for theread more*/
+             }
+             a:hover{
+                   color: rgb(224, 18, 18);
+                   background-color: rgb(125, 125, 182);
+                /* a:hover helps in : when we want to click the read more then the color changes due to a:hover*/
+             }
+             a:visited{
+                /* once it is clicked or used then it is said to be visited*/
+                background-color: rgb(204, 160, 167);
+                color: rgb(68, 49, 65);
+             }
+             a:active{
+                background-color: greenyellow;
+                color:rgb(164, 209, 164);
+             }
+             .btn:hover{
+                color: rgb(133, 90, 97);
+                background-color: rgb(201, 171, 228);
+             }
+            .btn{
+                border: 2px solid blue;
+                color: rgb(12, 137, 246);
+                background-color: rgb(194, 194, 236);
+                border-radius: 10px ;
+                padding: 5px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+       </style>
+    </head>
+
+<body>
+    <div class="container" id="cont1">
+<h1 align="center">now we are gng to start</h1>
+<p>now we gng to see about the styling of links and adding the buttons Lorem ipsum dolor sit amet consectetur adipisicing
+     elit. Vel veritatis, ullam debitis, sunt, necessitatibus aliquid consequuntur accusamus quam incidunt beatae sequi
+      placeat facere omnis saepe ducimus nisi ipsa nesciunt! Quaerat. </p>
+   
+    <a href="https://facebook.com" class="btn">Read more >></a>
+    <button class="btn"> contact us</button>
+    <br><br>
+    <input type ="submit" value="submit" class="btn">
+</div>
+</body>
+</html>
