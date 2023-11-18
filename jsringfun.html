@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <title>js string functions</title>
+    </head>
+    <body>
+<h1>java script string functions</h1>
+        <script>
+
+         //STRING FUNCTIONS.....
+            var str = "Im isa good is girl";
+            console.log(str);
+//1st occurance of a substring
+            var pos=str.indexOf('is')
+            console.log(pos)
+            //last occurance of the substring
+           var po=str.lastIndexOf('is')
+            console.log(po)
+            //Substring from a string 
+   var substr=str.slice(1,6)// negative can also can be taken.....
+   console.log(substr)// m to n-1 will be printed.......
+   var s=str.substring(1,6)//-ve can not be taken......
+   console.log(s)//m to n
+   var substr1=str.substr(1,6)
+   console.log(substr1)
+  var rep=str.replace('good','better')
+  console.log(rep)
+  console.log(str.toUpperCase())
+  console.log(str.toLowerCase())
+
+  var con=str.concat('hi')
+  console.log(con)
+  var sws="    hi hello      bye"
+  console.log(sws)
+  console.log(sws.trim())// extra space will be removed.....
+
+  var char1= str.charAt(1)
+  console.log(char1)// returns the character at that index.......
+  var ch=str.charCodeAt(2)
+  console.log(ch)// returns the character code at that index..........
+  console.log(str[1])// returns the character
+  //console.log('hi')
+        </script>
+    </body>
+</html>
