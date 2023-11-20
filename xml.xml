@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookinformation>
+<book>
+    <name>Web Technologies</name>
+    <author>Uttam K.Roy</author>
+    <publisherName>Uttam</publisherName>
+    <book.id>73802</book.id>
+    <price>200</price>
+    </book>
+</bookinformation>
