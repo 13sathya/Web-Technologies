@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>callbacks in java-script</title>
+    </head>
+    <body>
+<h2>callbacks in java-script</h2>
+<p>sum of the 2 numbers</p>
+        <div id="demo"><p>sum of the 2 numbers</p></div>
+        <script>
+          function display(smg){
+            document.getElementById('demo').innerHTML=smg;
+          }
+          function cal(n,m,callback){
+            let s=n+m;
+            callback(s);
+          }
+          cal(9,10,display);
+        </script>
+    </body>
+</html>
