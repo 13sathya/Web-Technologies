@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>closures in java-script</title>
+    </head>
+    <body>
+<h2>closures in java-script</h2>
+<p>increasing counter.... using closure property.........</p>
+<button id="btn" onclick="fun()">counter</button>
+        <div id="demo">0</div>
+        <script>
+            let c=0;
+            function add(){
+                     c +=1;
+                     return c;
+            }
+        function fun(){
+            document.getElementById("demo").innerHTML=add();
+          }
+        
+        
+          
+        </script>
+    </body>
+</html>
